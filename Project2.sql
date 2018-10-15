@@ -2,7 +2,8 @@
 * Date			Programmer		Notes
 * --------------------------------------------------------------------
 * 10/5/2018		Brian Jenks		First creation of MediaLibrary DB
-* 
+* 10/12/2018	Brian Jenks		Changed Borrower-Phone to CHAR(10) 
+*
 *************************************************************************/
 
 /* Create the database, or drop it if it already exists */
@@ -51,7 +52,7 @@ CREATE TABLE Borrower
 BorrowerID      INT            PRIMARY KEY IDENTITY,
 FirstName		VARCHAR(30)		NOT NULL,
 LastName		VARCHAR(40)		NOT NULL,
-PhoneNumber		INT				NOT NULL
+PhoneNumber		CHAR(10)		NOT NULL
 );
 
 /* This defines an Artist of media */
